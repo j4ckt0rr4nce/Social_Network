@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+{% block title %}Delete Post{% endblock title %}
+
+{% block content %}
+
+<div class="ui segment">
+	<h3>Delete Post</h3>
+	<form action="" method="POST">
+		{% csrf_token %}
+		<p>Are you sure you want to delete a form?</p>
+		<button type="submit">Delete</button>
+	</form>
+</div>
+
+{% block scripts %}
+{% endblock scripts %}
+
+{% endblock content %}
